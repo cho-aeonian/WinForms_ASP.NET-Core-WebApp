@@ -1,0 +1,68 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Umbrella rental status";
+}
+<script>
+        function goToPage(boxNumber) {
+        // URL을 /return-screen 경로로 설정하고 boxNumber를 쿼리 매개변수로 전달
+        const targetPage = '/return-screen?box=' + boxNumber;
+        window.location.href = targetPage; // 페이지 이동
+    }
+</script>
+
+<div id="logo-container">
+    <img id="logo" src="images/바로우산.png" alt="로고">
+    <p class="logo-text">우산이 필요한 날 우산을 대여해보세요.</p>
+</div>
+
+<div class="box-container">
+    <div class="box box1" onclick="goToPage(1)">
+        <img id="open-umbrella" src="~/images/펼쳐진우산.png" alt="펼쳐진우산" />
+        <div class="box-text">
+            <p class="box-title">우산1</p>
+            <p class="box-subtitle">대여 가능</p>
+            <p class="box-date">24.12.21~24.12.24</p>
+        </div>
+    </div>
+    <div class="box box2" onclick="goToPage(2)">
+        <img id="open-umbrella" src="~/images/펼쳐진우산.png" alt="펼쳐진우산" />
+        <div class="box-text">
+            <p class="box-title">우산2</p>
+            <p class="box-subtitle">대여 가능</p>
+            <p class="box-date">24.12.22~24.12.25</p>
+        </div>
+    </div>
+    <div class="box box3" onclick="goToPage(3)">
+        <img id="folded-umbrella" src="~/images/접혀진우산.png" alt="접혀진우산" />
+        <div class="box-text">
+            <p class="box-title">우산3</p>
+            <p class="box-subtitle">대여 가능</p>
+            <p class="box-date">24.12.23~24.12.26</p>
+        </div>
+    </div>
+    <div class="box box4" onclick="goToPage(4)">
+        <img id="open-umbrella" src="~/images/펼쳐진우산.png" alt="펼쳐진우산" />
+        <div class="box-text">
+            <p class="box-title">우산4</p>
+            <p class="box-subtitle">대여 가능</p>
+            <p class="box-date">24.12.24~24.12.27</p>
+        </div>
+    </div>
+    <div class="box box5" onclick="goToPage(5)">
+        <img id="folded-umbrella" src="~/images/접혀진우산.png" alt="접혀진우산" />
+        <div class="box-text">
+            <p class="box-title">우산5</p>
+            <p class="box-subtitle">대여 가능</p>
+            <p class="box-date">24.12.25~24.12.28</p>
+        </div>
+    </div>
+    <div class="box box6" onclick="goToPage(6)">
+        <img id="open-umbrella" src="~/images/펼쳐진우산.png" alt="펼쳐진우산" />
+        <div class="box-text">
+            <p class="box-title">우산6</p>
+            <p class="box-subtitle">대여 가능</p>
+            <p class="box-date">24.12.26~24.12.29</p>
+        </div>
+    </div>
+</div>
