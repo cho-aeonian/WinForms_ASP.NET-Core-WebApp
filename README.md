@@ -8,4 +8,4 @@
 ---
 
 - ASP.NET Core WebApp 구현에 대한 자세한 내용
-  👉🏻https://choxaeonian.tistory.com/
+  👉🏻[https://choxaeonian.tistory.com/](https://choxaeonian.tistory.com/category/C%23%20%ED%99%94%EB%A9%B4%20%EA%B5%AC%EC%B6%95)
